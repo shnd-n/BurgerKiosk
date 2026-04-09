@@ -20,10 +20,6 @@ namespace BurgerKiosk
                 check = true;
                 return;
             }
-
-            lblWarning.Visible = false;
-            lblTotalcost.Text = $"총 금액 : {totalCost:N0}원"
-            ;
         }
 
         private void btnInit_Click(object sender, EventArgs e)
@@ -67,12 +63,14 @@ namespace BurgerKiosk
                 listOrder.Items.Remove("햄버거 5,000원");
                 totalCost -= 5000;
                 check = false;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
             else
             {
                 totalCost += 5000;
                 listOrder.Items.Add("햄버거 5,000원");
                 check = true;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
         }
 
@@ -83,12 +81,14 @@ namespace BurgerKiosk
                 listOrder.Items.Remove("불고기버거 4,000원");
                 totalCost -= 4000;
                 check = false;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
             else
             {
                 totalCost += 4000;
                 listOrder.Items.Add("불고기버거 4,000원");
                 check = true;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
         }
 
@@ -99,12 +99,14 @@ namespace BurgerKiosk
                 listOrder.Items.Remove("치킨버거 3,000원");
                 totalCost -= 3000;
                 check = false;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
             else
             {
                 totalCost += 3000;
                 listOrder.Items.Add("치킨버거 3,000원");
                 check = true;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
         }
 
@@ -115,11 +117,13 @@ namespace BurgerKiosk
                 totalCost += 3500;
                 listOrder.Items.Add("감자튀김 3,500원");
                 check = true;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
             else
             {
                 listOrder.Items.Remove("감자튀김 3,500원");
                 totalCost -= 3500;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
         }
 
@@ -130,11 +134,13 @@ namespace BurgerKiosk
                 totalCost += 2500;
                 listOrder.Items.Add("콜라 2,500원");
                 check = true;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
             else
             {
                 listOrder.Items.Remove("콜라 2,500원");
                 totalCost -= 2500;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
         }
 
@@ -145,11 +151,13 @@ namespace BurgerKiosk
                 totalCost += 1500;
                 listOrder.Items.Add("치즈 1,500원");
                 check = true;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
             else
             {
                 listOrder.Items.Remove("치즈 1,500원");
                 totalCost -= 1500;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
         }
 
@@ -160,11 +168,13 @@ namespace BurgerKiosk
                 totalCost += 500;
                 listOrder.Items.Add("소스 500원");
                 check = true;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
             else
             {
                 listOrder.Items.Remove("소스 500원");
                 totalCost -= 500;
+                lblTotalcost.Text = $"총 금액 : {totalCost:N0}원";
             }
         }
     }
