@@ -11,6 +11,18 @@
   - Label, Button, RadioButton, CheckBox, GroupBox, ListBox, PictureBox
 - 사용한 기술과 구현한 기능:
   - Visual Studio를 이용하여 UI 구현
+  - 주문하기 버튼을 누를 시 주문 내역과 총 금액이 ListBox와 Label에 표시
+  - 초기화 버튼을 누를 시 주문 내역과 총 금액이 초기화
+  - RadioButton을 이용하여 햄버거 1개만 선택 가능하도록 구현
+  - CheckBox를 이용하여 추가옵션을 선택할 수 있도록 구현
+  - GroupBox로 햄버거와 추가옵션을 그룹으로 묶어 구현
+  - N0을 이용하여 금액을 천 단위로 구분하여 표시
+  - ActiveControl을 이용하여 초기 포커스가 라벨로 가게 설정
+  - Label.Visible을 이용하여 주문하기 버튼을 눌렀을 때 메뉴가 선택되지 않았을 경우 에러 메시지 표시
+  - Tab순서를 이용해서 Tab키로 GroupBox 사이를 이동할 수 있도록 구현
+  - KeyDown을 이용해서 버튼을 엔터키로 누를 수 있도록 구현
+  - CheckedChanged 속성을 이용하여 CheckBox를 선택하는 순간 주문 내역, 총 금액에 반영되도록 구현
+  - ListBox.Items.Contains를 이용하여 ListBox에 이미 주문 내역이 있는지 확인하여 중복으로 주문 내역이 추가되지 않도록 구현
 
 
 ## 실행 화면 (과제1)
@@ -67,3 +79,20 @@
 - 구현 내용과 기능 설명
   - Tab순서를 이용해서 Tab키로 GroupBox 사이를 이동할 수 있도록 구현
   - KeyDown을 이용해서 버튼을 엔터키로 누를 수 있도록 구현
+	
+
+## 실행 화면 (과제4)
+- 과제4 코드의 실행 스크린샷
+
+![과제4 실행화면](img/4-1.png)
+![과제4 실행화면](img/4-2.png)
+![과제4 실행화면](img/4-3.png)
+![과제4 실행화면](img/4-4.png)
+
+- 과제 내용
+  - 선택하는 순간 ListBox에 주문 내역이 표시되도록
+  - 선택하는 순간 Label에 전체 가격정보가 표시되도록
+
+- 구현 내용과 기능 설명
+  - CheckedChanged 속성을 이용하여 CheckBox를 선택하는 순간 주문 내역, 총 금액에 반영되도록 구현
+  - ListBox.Items.Contains를 이용하여 ListBox에 이미 주문 내역이 있는지 확인하여 중복으로 주문 내역이 추가되지 않도록 구현
