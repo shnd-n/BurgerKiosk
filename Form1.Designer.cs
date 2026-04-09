@@ -47,6 +47,7 @@
             listOrder = new ListBox();
             btnOrder = new Button();
             btnInit = new Button();
+            lblWarning = new Label();
             grpMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)chickPic).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bulPic).BeginInit();
@@ -114,7 +115,7 @@
             grpMenu.Location = new Point(30, 88);
             grpMenu.Name = "grpMenu";
             grpMenu.Size = new Size(275, 273);
-            grpMenu.TabIndex = 4;
+            grpMenu.TabIndex = 2;
             grpMenu.TabStop = false;
             grpMenu.Text = "메뉴 선택";
             // 
@@ -159,7 +160,7 @@
             grpOption.Location = new Point(336, 106);
             grpOption.Name = "grpOption";
             grpOption.Size = new Size(161, 213);
-            grpOption.TabIndex = 5;
+            grpOption.TabIndex = 3;
             grpOption.TabStop = false;
             grpOption.Text = "추가 옵션";
             // 
@@ -215,7 +216,7 @@
             grpOrder.Location = new Point(522, 106);
             grpOrder.Name = "grpOrder";
             grpOrder.Size = new Size(299, 255);
-            grpOrder.TabIndex = 6;
+            grpOrder.TabIndex = 4;
             grpOrder.TabStop = false;
             grpOrder.Text = "주문 내역";
             // 
@@ -245,7 +246,7 @@
             btnOrder.Location = new Point(522, 375);
             btnOrder.Name = "btnOrder";
             btnOrder.Size = new Size(154, 54);
-            btnOrder.TabIndex = 7;
+            btnOrder.TabIndex = 5;
             btnOrder.Text = "주문하기";
             btnOrder.UseVisualStyleBackColor = false;
             btnOrder.Click += btnOrder_Click;
@@ -258,16 +259,29 @@
             btnInit.Location = new Point(698, 375);
             btnInit.Name = "btnInit";
             btnInit.Size = new Size(117, 54);
-            btnInit.TabIndex = 8;
+            btnInit.TabIndex = 6;
             btnInit.Text = "초기화";
             btnInit.UseVisualStyleBackColor = false;
             btnInit.Click += btnInit_Click;
+            // 
+            // lblWarning
+            // 
+            lblWarning.AutoSize = true;
+            lblWarning.Font = new Font("맑은 고딕", 12F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lblWarning.ForeColor = Color.Red;
+            lblWarning.Location = new Point(522, 63);
+            lblWarning.Name = "lblWarning";
+            lblWarning.Size = new Size(202, 21);
+            lblWarning.TabIndex = 1;
+            lblWarning.Text = "메뉴를 선택하여 주십시오.";
+            lblWarning.Visible = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(861, 441);
+            Controls.Add(lblWarning);
             Controls.Add(btnInit);
             Controls.Add(btnOrder);
             Controls.Add(grpOrder);
@@ -309,5 +323,6 @@
         private PictureBox hamPic;
         private Button btnOrder;
         private Button btnInit;
+        private Label lblWarning;
     }
 }
