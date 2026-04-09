@@ -1,1 +1,35 @@
 # BurgerKiosk
+
+# (C# 코딩) BurgerKiosk 과제
+
+## 개요
+- C# 프로그래밍 학습
+- 1줄 소개: 메세지를 입력하고 이를 로그에 기록하는 메신저 프로그램
+- 사용한 플랫폼:
+  -C#, .NET Windows Forms, Visual Studio, GitHub
+- 사용한 컨트롤:
+  - Label, Button, RadioButton, CheckBox, GroupBox, ListBox, PictureBox
+- 사용한 기술과 구현한 기능:
+  - Visual Studio를 이용하여 UI 구현
+
+
+## 실행 화면 (과제1)
+- 과제1 코드의 실행 스크린샷
+
+![과제1 실행화면](img/1-1.png)
+![과제1 실행화면](img/1-2.png)
+![과제1 실행화면](img/1-3.png)
+
+- 과제 내용
+  - RadioButton과 CheckBox 등을 적절히 배치합니다.
+  - GroupBox로 적절하게 그룹으로 묶습니다.
+  - 주문 내역과 총 금액을 표시합니다.
+  - 다시 주문할 수 있도록 초기화합니다.
+
+- 구현 내용과 기능 설명
+  - 주문하기 버튼을 누를 시 주문 내역과 총 금액이 ListBox와 Label에 표시
+  - 초기화 버튼을 누를 시 주문 내역과 총 금액이 초기화
+  - RadioButton을 이용하여 햄버거 1개만 선택 가능하도록 구현
+  - CheckBox를 이용하여 추가옵션을 선택할 수 있도록 구현
+  - GroupBox로 햄버거와 추가옵션을 그룹으로 묶어 구현
+  - N0을 이용하여 금액을 천 단위로 구분하여 표시
