@@ -78,6 +78,7 @@
             rdoHamBurger.TabStop = true;
             rdoHamBurger.Text = "햄버거";
             rdoHamBurger.UseVisualStyleBackColor = true;
+            rdoHamBurger.CheckedChanged += rdoHamBurger_CheckedChanged;
             // 
             // rdoBulgogiBurger
             // 
@@ -90,6 +91,7 @@
             rdoBulgogiBurger.TabStop = true;
             rdoBulgogiBurger.Text = "불고기버거";
             rdoBulgogiBurger.UseVisualStyleBackColor = true;
+            rdoBulgogiBurger.CheckedChanged += rdoBulgogiBurger_CheckedChanged;
             // 
             // rdoChickenBurger
             // 
@@ -102,6 +104,7 @@
             rdoChickenBurger.TabStop = true;
             rdoChickenBurger.Text = "치킨버거";
             rdoChickenBurger.UseVisualStyleBackColor = true;
+            rdoChickenBurger.CheckedChanged += rdoChickenBurger_CheckedChanged;
             // 
             // grpMenu
             // 
@@ -175,6 +178,7 @@
             chkSauce.TabStop = false;
             chkSauce.Text = "소스 추가";
             chkSauce.UseVisualStyleBackColor = true;
+            chkSauce.CheckedChanged += chkSauce_CheckedChanged;
             // 
             // chkCheese
             // 
@@ -187,6 +191,7 @@
             chkCheese.TabStop = false;
             chkCheese.Text = "치즈 추가";
             chkCheese.UseVisualStyleBackColor = true;
+            chkCheese.CheckedChanged += chkCheese_CheckedChanged;
             // 
             // chkCoke
             // 
@@ -199,6 +204,7 @@
             chkCoke.TabStop = false;
             chkCoke.Text = "콜라";
             chkCoke.UseVisualStyleBackColor = true;
+            chkCoke.CheckedChanged += chkCoke_CheckedChanged;
             // 
             // chkPotato
             // 
@@ -210,6 +216,7 @@
             chkPotato.TabIndex = 0;
             chkPotato.Text = "감자튀김";
             chkPotato.UseVisualStyleBackColor = true;
+            chkPotato.CheckedChanged += chkPotato_CheckedChanged;
             // 
             // grpOrder
             // 
