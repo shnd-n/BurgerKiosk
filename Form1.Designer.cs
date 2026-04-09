@@ -172,6 +172,7 @@
             chkSauce.Name = "chkSauce";
             chkSauce.Size = new Size(84, 21);
             chkSauce.TabIndex = 3;
+            chkSauce.TabStop = false;
             chkSauce.Text = "소스 추가";
             chkSauce.UseVisualStyleBackColor = true;
             // 
@@ -183,6 +184,7 @@
             chkCheese.Name = "chkCheese";
             chkCheese.Size = new Size(84, 21);
             chkCheese.TabIndex = 2;
+            chkCheese.TabStop = false;
             chkCheese.Text = "치즈 추가";
             chkCheese.UseVisualStyleBackColor = true;
             // 
@@ -194,6 +196,7 @@
             chkCoke.Name = "chkCoke";
             chkCoke.Size = new Size(53, 21);
             chkCoke.TabIndex = 1;
+            chkCoke.TabStop = false;
             chkCoke.Text = "콜라";
             chkCoke.UseVisualStyleBackColor = true;
             // 
@@ -250,6 +253,7 @@
             btnOrder.Text = "주문하기";
             btnOrder.UseVisualStyleBackColor = false;
             btnOrder.Click += btnOrder_Click;
+            btnOrder.KeyDown += btnOrder_KeyDown;
             // 
             // btnInit
             // 
@@ -263,6 +267,7 @@
             btnInit.Text = "초기화";
             btnInit.UseVisualStyleBackColor = false;
             btnInit.Click += btnInit_Click;
+            btnInit.KeyDown += btnInit_KeyDown;
             // 
             // lblWarning
             // 

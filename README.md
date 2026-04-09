@@ -6,7 +6,7 @@
 - C# 프로그래밍 학습
 - 1줄 소개: 메세지를 입력하고 이를 로그에 기록하는 메신저 프로그램
 - 사용한 플랫폼:
-  -C#, .NET Windows Forms, Visual Studio, GitHub
+  - C#, .NET Windows Forms, Visual Studio, GitHub
 - 사용한 컨트롤:
   - Label, Button, RadioButton, CheckBox, GroupBox, ListBox, PictureBox
 - 사용한 기술과 구현한 기능:
@@ -48,3 +48,22 @@
 - 구현 내용과 기능 설명
   - ActiveControl을 이용하여 초기 포커스가 라벨로 가게 설정
   - Label.Visible을 이용하여 주문하기 버튼을 눌렀을 때 메뉴가 선택되지 않았을 경우 에러 메시지 표시
+
+
+## 실행 화면 (과제3)
+- 과제3 코드의 실행 스크린샷
+
+![과제3 실행화면](img/3-1.png)
+![과제3 실행화면](img/3-2.png)
+![과제3 실행화면](img/3-3.png)
+![과제3 실행화면](img/3-4.png)
+
+- 과제 내용
+  - Tab을 이용해서 GroupBox 사이를 이동하기
+  - 방향키를 이용해서 선택 아이템 사이를 이동하기
+  - 스페이스바를 이용해서 아이템 선택하기
+  - Enter키로 버튼을 누르기
+
+- 구현 내용과 기능 설명
+  - Tab순서를 이용해서 Tab키로 GroupBox 사이를 이동할 수 있도록 구현
+  - KeyDown을 이용해서 버튼을 엔터키로 누를 수 있도록 구현
